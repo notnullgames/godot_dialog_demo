@@ -1,0 +1,145 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/DialogBg.tscn" type="PackedScene" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends CanvasLayer
+
+signal dialog_actioned(id)
+
+var dialog
+var current_choice = 0
+
+# this draws the current text of the dialog
+func drawText():
+	$Text.bbcode_text = dialog.dialogue
+	if dialog.responses.size():
+		$Text.bbcode_text += '\\n'
+		for i in range(dialog.responses.size()):
+			if i == current_choice:
+				$Text.bbcode_text += '\\n- ' + dialog.responses[i].prompt
+			else:
+				$Text.bbcode_text += '\\n  ' + dialog.responses[i].prompt
+
+# this is called by Game.show_dialog()
+func handle(d):
+	dialog = d
+	$Name.bbcode_text = dialog.character
+	drawText()
+	if dialog.next_node_id:
+		$MoreIndicator.play(\"more\")
+		$MoreIndicator/Label.visible = true
+	else:
+		$MoreIndicator.stop()
+		$MoreIndicator/Label.visible = false
+
+# manage dialog menu input
+func _input(event):
+	if event.is_action_pressed('ui_cancel'):
+		Game.set_player_move(true)
+		queue_free()
+	if dialog.responses.size() == 0:
+		if event.is_action_pressed('ui_accept'):
+			emit_signal('dialog_actioned', dialog.next_node_id)
+			queue_free()
+	else:
+		if event.is_action_pressed('ui_up'):
+			current_choice = (current_choice - 1) % dialog.responses.size()
+			drawText()
+		if event.is_action_pressed('ui_down'):
+			current_choice = (current_choice + 1) % dialog.responses.size()
+			drawText()
+		if event.is_action_pressed('ui_accept'):
+			emit_signal('dialog_actioned', dialog.responses[current_choice].next_node_id)
+			queue_free()
+"
+
+[sub_resource type="Animation" id=2]
+resource_name = "more"
+length = 0.3
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("MoreIndicator/Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ ".", "..", "..." ]
+}
+
+[node name="Dialog" type="CanvasLayer"]
+script = SubResource( 1 )
+
+[node name="DialogBg" parent="." instance=ExtResource( 1 )]
+margin_left = -156.0
+margin_top = 159.0
+margin_right = 155.0
+margin_bottom = 232.0
+
+[node name="Text" type="RichTextLabel" parent="."]
+margin_left = 12.6866
+margin_top = 166.29
+margin_right = 295.687
+margin_bottom = 224.29
+rect_clip_content = false
+bbcode_enabled = true
+bbcode_text = "TEXT
+TEXT
+TEXT
+TEXT
+TEXT
+TEXT
+TEXT
+TEXT
+TEXT
+TEXT
+TEXT
+TEXT"
+text = "TEXT
+TEXT
+TEXT
+TEXT
+TEXT
+TEXT
+TEXT
+TEXT
+TEXT
+TEXT
+TEXT
+TEXT"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MoreIndicator" type="AnimationPlayer" parent="."]
+playback_speed = 0.5
+anims/more = SubResource( 2 )
+
+[node name="Label" type="Label" parent="MoreIndicator"]
+margin_left = 296.372
+margin_top = 214.44
+margin_right = 311.372
+margin_bottom = 228.44
+text = "..."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="RichTextLabel" parent="."]
+margin_left = 9.61363
+margin_top = 142.889
+margin_right = 210.614
+margin_bottom = 152.889
+rect_clip_content = false
+bbcode_enabled = true
+bbcode_text = "NAME"
+text = "NAME"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
