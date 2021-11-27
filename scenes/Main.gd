@@ -1,5 +1,4 @@
 extends Spatial
 
 func _ready():
-	Game.show_dialog("27a11e58-6121-4216-a3bc-a91928886c58")
-
+	Game.show_dialog("49f3b4f5-f7bc-4fbe-9c60-0ae7990f527f")

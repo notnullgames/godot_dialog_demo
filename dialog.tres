@@ -4,4 +4,79 @@
 
 [resource]
 script = ExtResource( 1 )
-lines = {"27a11e58-6121-4216-a3bc-a91928886c58":{"id":"27a11e58-6121-4216-a3bc-a91928886c58","type":"dialogue","character":"You","dialogue":"Hello!","go_to_node_id":"","next_node_id":"80729db0-83dd-43cb-afc7-6fd90484623e"},"80729db0-83dd-43cb-afc7-6fd90484623e":{"id":"80729db0-83dd-43cb-afc7-6fd90484623e","type":"dialogue","character":"???","dialogue":"get out of my room kid!","go_to_node_id":"","next_node_id":"1acba73e-4b86-4723-b34d-468c7878723e"},"1acba73e-4b86-4723-b34d-468c7878723e":{"id":"1acba73e-4b86-4723-b34d-468c7878723e","type":"dialogue","character":"You","dialogue":"But this is my room","go_to_node_id":"","next_node_id":"9b3b4447-eb56-435e-b822-a30a3c52f3ee"},"9b3b4447-eb56-435e-b822-a30a3c52f3ee":{"id":"9b3b4447-eb56-435e-b822-a30a3c52f3ee","type":"dialogue","character":"???","dialogue":"Thats not my problem!!!! from now on im ur bestie","go_to_node_id":"","next_node_id":"4daaa04d-e80d-4fc9-bb15-63c5c1128ca5"},"4daaa04d-e80d-4fc9-bb15-63c5c1128ca5":{"id":"4daaa04d-e80d-4fc9-bb15-63c5c1128ca5","type":"dialogue","character":"Ur Bestie","dialogue":"And im gonna need yourr help","go_to_node_id":"","next_node_id":"17f8e34d-41d0-4fd6-9600-b888a16d9592"},"17f8e34d-41d0-4fd6-9600-b888a16d9592":{"id":"17f8e34d-41d0-4fd6-9600-b888a16d9592","type":"responses","responses":[{"prompt":"Can you repeat that?","next_node_id":"27a11e58-6121-4216-a3bc-a91928886c58"},{"prompt":"Alright then","next_node_id":""}]},"ccd3b173-5b46-43a5-8ccc-0176f0bb8ff2":{"id":"ccd3b173-5b46-43a5-8ccc-0176f0bb8ff2","type":"dialogue","character":"Ur Bestie","dialogue":"That was a tough one","go_to_node_id":"","next_node_id":"ff987a7a-c475-4ca4-bc6f-a8511766e54e"},"ff987a7a-c475-4ca4-bc6f-a8511766e54e":{"id":"ff987a7a-c475-4ca4-bc6f-a8511766e54e","type":"dialogue","character":"Ur Bestie","dialogue":"thats why im glad I made YOU DO IT!!!!!","go_to_node_id":"","next_node_id":"23f46bdd-f53b-46f8-b5fd-b74e68bfe93b"},"23f46bdd-f53b-46f8-b5fd-b74e68bfe93b":{"id":"23f46bdd-f53b-46f8-b5fd-b74e68bfe93b","type":"dialogue","character":"Ur Bestie","dialogue":"Now that the power has been shut down its your job to get the keys","go_to_node_id":"","next_node_id":"31d3255d-f23e-4ea9-97a3-8e7682c23009"},"31d3255d-f23e-4ea9-97a3-8e7682c23009":{"id":"31d3255d-f23e-4ea9-97a3-8e7682c23009","type":"dialogue","character":"Ur Bestie","dialogue":"get thru the principle, get out of the building,","go_to_node_id":"","next_node_id":"2e9b62e5-7d6c-4458-aa8c-2b549c4151a9"},"2e9b62e5-7d6c-4458-aa8c-2b549c4151a9":{"id":"2e9b62e5-7d6c-4458-aa8c-2b549c4151a9","type":"dialogue","character":"Ur Bestie","dialogue":"get MYYY lunch ready","go_to_node_id":"","next_node_id":"c4fb4370-58fb-4324-8e41-42933cbffd7f"},"c4fb4370-58fb-4324-8e41-42933cbffd7f":{"id":"c4fb4370-58fb-4324-8e41-42933cbffd7f","type":"responses","responses":[{"prompt":"That is all","next_node_id":""}]},"2ffcf89b-5edb-462b-a79f-52b458e36757":{"id":"2ffcf89b-5edb-462b-a79f-52b458e36757","type":"dialogue","character":"All Keys!","dialogue":"the solumn keys, purple, brown, green","go_to_node_id":"","next_node_id":"d8d06c7b-705f-4706-b435-854941f7f751"},"d8d06c7b-705f-4706-b435-854941f7f751":{"id":"d8d06c7b-705f-4706-b435-854941f7f751","type":"dialogue","character":"All Keys!","dialogue":"lie peacefully, betwixed his teeth","go_to_node_id":"","next_node_id":"a7641723-9d36-4ab9-8fd9-f1223c43312c"},"a7641723-9d36-4ab9-8fd9-f1223c43312c":{"id":"a7641723-9d36-4ab9-8fd9-f1223c43312c","type":"dialogue","go_to_node_id":"","next_node_id":"f0371544-52b6-4aa5-8367-e62056422d83"},"f0371544-52b6-4aa5-8367-e62056422d83":{"id":"f0371544-52b6-4aa5-8367-e62056422d83","type":"responses","responses":[{"prompt":"That is all","next_node_id":""}]},"15f5a304-5d75-4b6e-a08c-79063b167dc8":{"id":"15f5a304-5d75-4b6e-a08c-79063b167dc8","type":"dialogue","character":"Ur Bestie","dialogue":"Pull the trigger! That little dingus is weak!!!!","go_to_node_id":"","next_node_id":"f18abef0-aea7-450a-a2b4-f7c9b3517584"},"f18abef0-aea7-450a-a2b4-f7c9b3517584":{"id":"f18abef0-aea7-450a-a2b4-f7c9b3517584","type":"dialogue","character":"Ur Bestie","dialogue":"Nows your chaaaaaaaance!!!!!!!!","go_to_node_id":"","next_node_id":"ab77936b-b33b-4e4f-bf28-f19b271ce918"},"ab77936b-b33b-4e4f-bf28-f19b271ce918":{"id":"ab77936b-b33b-4e4f-bf28-f19b271ce918","type":"responses","responses":[{"prompt":"That is all","next_node_id":""}]},"8ec7a3af-4f74-4150-91ca-94db7184d278":{"id":"8ec7a3af-4f74-4150-91ca-94db7184d278","type":"dialogue","character":"Monday","dialogue":"Can we pretnd that airplanes in the night sky","go_to_node_id":"","next_node_id":"282ecf50-9fdd-4524-82de-d0851f4659f9"},"282ecf50-9fdd-4524-82de-d0851f4659f9":{"id":"282ecf50-9fdd-4524-82de-d0851f4659f9","type":"dialogue","character":"Monday","dialogue":"are like shooting stars","go_to_node_id":"","next_node_id":"674ac798-5d8c-4e40-8828-51198c317eaa"},"674ac798-5d8c-4e40-8828-51198c317eaa":{"id":"674ac798-5d8c-4e40-8828-51198c317eaa","type":"responses","responses":[{"prompt":"That is all","next_node_id":""}]}}
+lines = {
+"0591a1dc-5146-4dde-b436-e968a3f22e15": {
+"id": "0591a1dc-5146-4dde-b436-e968a3f22e15",
+"responses": [ {
+"next_node_id": "",
+"prompt": "Umm, ok, bye"
+} ],
+"type": "responses"
+},
+"49f3b4f5-f7bc-4fbe-9c60-0ae7990f527f": {
+"character": "Cube Dude",
+"dialogue": "Oh, hmm, you shouldn;t be here.",
+"go_to_node_id": "",
+"id": "49f3b4f5-f7bc-4fbe-9c60-0ae7990f527f",
+"next_node_id": "e2bb7cc9-0eb4-4e51-8eca-68378597ff3d",
+"type": "dialogue"
+},
+"921a0de8-4ced-4bf1-bffd-fdf51151ea96": {
+"character": "Cube Dude",
+"dialogue": "Well, I mean this is the amorphous cloud universe, and you are just liek a regular human-type creature.",
+"go_to_node_id": "",
+"id": "921a0de8-4ced-4bf1-bffd-fdf51151ea96",
+"next_node_id": "9d041554-3065-4bfc-856e-6ddc2bf7b0d5",
+"type": "dialogue"
+},
+"9d041554-3065-4bfc-856e-6ddc2bf7b0d5": {
+"character": "Cool Dude",
+"dialogue": "Please leave.",
+"go_to_node_id": "",
+"id": "9d041554-3065-4bfc-856e-6ddc2bf7b0d5",
+"next_node_id": "fb8bc965-3fcf-4d36-ade1-1729f967d43f",
+"type": "dialogue"
+},
+"d38caee7-b7fc-4808-ba28-5c977acc02c1": {
+"character": "Cube Dude",
+"dialogue": "I expect you to leave!!!!",
+"go_to_node_id": "",
+"id": "d38caee7-b7fc-4808-ba28-5c977acc02c1",
+"next_node_id": "0591a1dc-5146-4dde-b436-e968a3f22e15",
+"type": "dialogue"
+},
+"e2bb7cc9-0eb4-4e51-8eca-68378597ff3d": {
+"character": "You",
+"dialogue": "What do you mean?",
+"go_to_node_id": "",
+"id": "e2bb7cc9-0eb4-4e51-8eca-68378597ff3d",
+"next_node_id": "921a0de8-4ced-4bf1-bffd-fdf51151ea96",
+"type": "dialogue"
+},
+"e7e4ce9d-a5fb-4651-b8bc-26141f0a2923": {
+"go_to_node_id": "",
+"id": "e7e4ce9d-a5fb-4651-b8bc-26141f0a2923",
+"mutation": "shake_camera",
+"next_node_id": "d38caee7-b7fc-4808-ba28-5c977acc02c1",
+"type": "mutation"
+},
+"fb73ee8f-b287-41cb-9ce8-7a1887617e8c": {
+"character": "You",
+"dialogue": "WHat do you expect me top do about it?",
+"go_to_node_id": "",
+"id": "fb73ee8f-b287-41cb-9ce8-7a1887617e8c",
+"next_node_id": "e7e4ce9d-a5fb-4651-b8bc-26141f0a2923",
+"type": "dialogue"
+},
+"fb8bc965-3fcf-4d36-ade1-1729f967d43f": {
+"id": "fb8bc965-3fcf-4d36-ade1-1729f967d43f",
+"responses": [ {
+"next_node_id": "",
+"prompt": "Ok, Goodbye"
+}, {
+"next_node_id": "fb73ee8f-b287-41cb-9ce8-7a1887617e8c",
+"prompt": "What do you expect me to do?"
+} ],
+"type": "responses"
+}
+}
